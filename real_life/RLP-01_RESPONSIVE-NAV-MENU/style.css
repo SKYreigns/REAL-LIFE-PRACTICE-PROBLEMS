@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  nav {
+    background-color: #3232328e;
+    width: 100%;
+  }
+  
+  .nav_container {
+    max-width: 1600px;
+    margin: auto;
+    height: 70px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  #menu_button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    position: absolute;
+    right: 0;
+  }
+  
+  .logo_icon a {
+    color: #84c3ff;
+    font-size: 32px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .fa-google {
+    font-size: 32px;
+  }
+  
+  .search_bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 999px;
+    height: 40px;
+    padding: 0 10px;
+    max-width: 300px;
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .search_bar input {
+    border: none;
+    outline: none;
+    height: 100%;
+    flex: 1;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 999px;
+  }
+  
+  .search_bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .fa-magnifying-glass {
+    font-size: 20px;
+    color: #51abff;
+  }
+  
+  .nav_items {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+  }
+  
+  .nav_button_css {
+    background-color: #ffffff;
+    color: #51abff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+    white-space: nowrap;
+  }
+  
+  .nav_button_css:hover {
+    background-color: #e0f0ff;
+  }
+  
+  /* ---------- Responsive Styles ---------- */
+  @media (max-width: 1024px) {
+    #menu_button {
+      display: block;
+      margin: 10px;
+    }
+  
+    .nav_items {
+      display: none;
+      flex-direction: column;
+      background-color: #2a2a2a;
+      width: 30%;
+      margin-top: 10px;
+      border-radius: 10px;
+      position: absolute;
+      right: 0px;
+      top: 50px;
+    }
+  
+    .nav_items.show {
+      display: flex;
+    }
+  
+    .nav_items li {
+      text-align: center;
+      padding: 10px 0;
+    }
+  
+    .search_bar {
+      flex-basis: 100%;
+      max-width: none;
+      margin: 10px 0;
+    }
+  
+    .nav_container {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  }
+  
