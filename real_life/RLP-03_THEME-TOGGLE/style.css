@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to bottom, #ffffa5, #0d0330);
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    background-color: #ffffffc2;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 20px white;
+    height: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style:italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .time{
+    position: absolute;
+    left: 10px;
+}
+
+nav .title{
+    color: crimson;
+    text-decoration: underline;
+}
+
+nav img{
+    width: 40px;
+    position: absolute;
+    right: 0; 
+    top: -5px;
+    margin: 10px;
+}
+
+nav button{
+    background: none;
+    border: none;
+}
+
+
+
+main .sun img{
+    width: 200px;
+}
+
+main .day_clouds img{
+    width: 200px;
+}
+

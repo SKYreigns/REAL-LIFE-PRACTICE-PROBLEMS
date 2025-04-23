@@ -1,0 +1,42 @@
+<!-- 
+ The Goal:
+
+Your primary objective is to create a user-interactive element (typically a button or a toggle switch) that allows users to dynamically change the visual theme of your webpage between a "light mode" and a "dark mode."
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Theme</title>
+
+    <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+   <nav>
+      <div class="time">TIME:</div>
+      <div class="title">THEMES</div>
+      <button class="call_sun"><img src="/real_life/RLP-03_THEME-TOGGLE/images/sun.png" alt=""></button>
+      <button class="call_moon"><img src="/real_life/RLP-03_THEME-TOGGLE/images/moon.png" alt=""></button>
+   </nav>
+
+    <main id="day">
+        <div class="sun"><img src="/real_life/RLP-03_THEME-TOGGLE/images/sun.png" alt="">SUN, is here to BURN it all Baby!</div>
+        <div class="day_clouds">
+         <img src="/real_life/RLP-03_THEME-TOGGLE/images/day_cloud1.png" alt="">
+         <img src="/real_life/RLP-03_THEME-TOGGLE/images/day_clouds2.png" alt="">
+      </div>
+    </main>
+    <main id="night">
+      <div class="moon"><img src="/real_life/RLP-03_THEME-TOGGLE/images/moon.png" alt=""></div>
+      <div class="night_clouds">
+         <img src="/real_life/RLP-03_THEME-TOGGLE/images/night_cloud1.png" alt="">
+         <img src="/real_life/RLP-03_THEME-TOGGLE/images/night_cloud2.png" alt="">
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+ </body>
+ </html>
