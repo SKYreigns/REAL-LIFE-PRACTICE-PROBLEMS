@@ -4,7 +4,7 @@
 }
 
 body{
-    background: linear-gradient(to bottom, #ffffa5, #0d0330);
+    /* background: linear-gradient(to bottom, #ffffa5, #0d0330); */
     overflow-x: hidden;
 }
 
@@ -46,13 +46,30 @@ nav button{
     border: none;
 }
 
-
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100%;
+    background-color: #212121;
+}
 
 main .sun img{
-    width: 200px;
+    position: absolute;
+
 }
 
-main .day_clouds img{
-    width: 200px;
+main p{
+    color: orangered;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: absolute;
 }
 
+
+main .moon img{
+    width: 200px;
+}
